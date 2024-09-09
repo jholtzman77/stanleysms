@@ -1,0 +1,80 @@
+{
+    "name": "magento/project-community-edition",
+    "description": "eCommerce Platform for Growth (Community Edition)",
+    "type": "project",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "laminas/laminas-dependency-plugin": true,
+            "magento/*": true,
+            "php-http/discovery": true
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "version": "2.4.6-p3",
+    "require": {
+        "amasty/module-mass-order-actions": "^1.6",
+        "amasty/ogrid": "^1.5",
+        "amasty/shiprestriction": "^2.10",
+        "idealcode/magento2-windows-compatibility": "^1.0",
+        "laminas/laminas-serializer": "^2.17",
+        "magento/composer-dependency-version-audit-plugin": "~0.1",
+        "magento/composer-root-update-plugin": "~2.0",
+        "magento/product-community-edition": "2.4.6-p3",
+        "mageplaza/module-core": "*",
+        "opensearch-project/opensearch-php": "^2.0",
+        "zendframework/zendframework1": "^1.12"
+    },
+    "autoload": {
+        "exclude-from-classmap": [
+            "**/dev/**",
+            "**/update/**",
+            "**/Test/**"
+        ],
+        "files": [
+            "app/etc/NonComposerComponentRegistration.php"
+        ],
+        "psr-0": {
+            "": [
+                "app/code/",
+                "generated/code/"
+            ]
+        },
+        "psr-4": {
+            "Magento\\": "app/code/Magento/",
+            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+            "Magento\\Setup\\": "setup/src/Magento/Setup/"
+        }
+    },
+    "conflict": {
+        "gene/bluefoot": "*"
+    },
+    "autoload-dev": {
+    
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        },
+        {
+            "type": "composer",
+            "url": "https://repo.mageplaza.com/"
+        },
+        {
+            "type": "composer",
+            "url": "https://composer.amasty.com/community/"
+        }
+    ],
+    "extra": {
+        "magento-force": "override"
+    }
+
+}
