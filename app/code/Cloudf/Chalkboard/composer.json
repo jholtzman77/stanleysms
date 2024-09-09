@@ -1,6 +1,6 @@
 {
     "name": "cloudf/chalkboard",
-    "description": "Custom Chalkboard Homepage Effect",
+    "description": "Custom Chalkboard Homepage Effects",
     "require": {
         "php": "7.0.2|7.0.4|~7.0.6|^7.1.0",
         "amasty/base": "*"
