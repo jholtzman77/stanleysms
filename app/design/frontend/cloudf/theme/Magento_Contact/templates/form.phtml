@@ -1,0 +1,66 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+/** @var \Magento\Contact\Block\ContactForm $block */
+?>
+
+<form class="form contact"
+      action="<?= $block->escapeUrl($block->getFormAction()) ?>"
+      id="contact-form"
+      method="post"
+      data-hasrequired="<?= $block->escapeHtmlAttr(__('* Required Fields')) ?>"
+      data-mage-init='{"validation":{}}'>
+    <fieldset class="fieldset">
+
+<legend class="legend"><span>Visit Us</span></legend><br />
+        <div class="field note no-label"><?= $block->escapeHtml(__('Stop by and see us at 3302 Stickney Ave, Toledo, OH 43608')) ?></div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.7310726361775!2d-83.52857378456498!3d41.68315107923817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b816c9d3eae5b%3A0x369af7f629494cf6!2s3302+Stickney+Ave%2C+Toledo%2C+OH+43608!5e0!3m2!1sen!2sus!4v1558188357722!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<br /><br />
+<legend class="legend"><span>Call Us</span></legend><br />
+        <div class="field note no-label"><?= $block->escapeHtml(__('Give us a call at 419-726-4347.')) ?></div>
+
+<legend class="legend"><span>Find Us on Facebook</span></legend><br />
+        <div class="field note no-label"><a href="http://www.facebook.com/pages/Toledo-OH/Stanleys-Market/316106660529?ref=ts" target="_blank"><img src="/pub/media/Find_Us_on_Facebook.gif" alt="" width="144" border="0" height="44"></a></div>
+
+        <legend class="legend"><span><?= $block->escapeHtml(__('Write Us')) ?></span></legend><br />
+        <div class="field note no-label"><?= $block->escapeHtml(__('Send us a note and we’ll get back to you as quickly as possible.')) ?></div>
+        <div class="field name required">
+            <label class="label" for="name"><span><?= $block->escapeHtml(__('Name')) ?></span></label>
+            <div class="control">
+                <input name="name" id="name" title="<?= $block->escapeHtmlAttr(__('Name')) ?>" value="<?= $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('name') ?: $this->helper('Magento\Contact\Helper\Data')->getUserName()) ?>" class="input-text" type="text" data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field email required">
+            <label class="label" for="email"><span><?= $block->escapeHtml(__('Email')) ?></span></label>
+            <div class="control">
+                <input name="email" id="email" title="<?= $block->escapeHtmlAttr(__('Email')) ?>" value="<?= $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('email') ?: $this->helper('Magento\Contact\Helper\Data')->getUserEmail()) ?>" class="input-text" type="email" data-validate="{required:true, 'validate-email':true}"/>
+            </div>
+        </div>
+        <div class="field telephone">
+            <label class="label" for="telephone"><span><?= $block->escapeHtml(__('Phone Number')) ?></span></label>
+            <div class="control">
+                <input name="telephone" id="telephone" title="<?= $block->escapeHtmlAttr(__('Phone Number')) ?>" value="<?= $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('telephone')) ?>" class="input-text" type="text" />
+            </div>
+        </div>
+        <div class="field comment required">
+            <label class="label" for="comment"><span><?= $block->escapeHtml(__('What’s on your mind?')) ?></span></label>
+            <div class="control">
+                <textarea name="comment" id="comment" title="<?= $block->escapeHtmlAttr(__('What’s on your mind?')) ?>" class="input-text" cols="5" rows="3" data-validate="{required:true}"><?= $block->escapeHtml($this->helper('Magento\Contact\Helper\Data')->getPostValue('comment')) ?></textarea>
+            </div>
+        </div>
+        <?= $block->getChildHtml('form.additional.info') ?>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="<?= $block->escapeHtmlAttr(__('Submit')) ?>" class="action submit primary">
+                <span><?= $block->escapeHtml(__('Submit')) ?></span>
+            </button>
+        </div>
+    </div>
+</form>

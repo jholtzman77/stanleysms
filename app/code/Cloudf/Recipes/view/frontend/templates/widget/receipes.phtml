@@ -1,0 +1,78 @@
+
+
+test
+
+<div id="tab_element">
+    <ul class="tabs-horiz" >
+        <li>
+            <a href="#tab1_content">
+                <span>
+                    <?php echo __("Tab1"); ?>            
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#tab2_content">
+                <span>
+                    <?php echo __("Tab2"); ?>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#tab3_content">
+                <span>
+                    <?php echo __("Tab3"); ?>
+                </span>
+            </a>
+        </li>     
+        <li>
+            <a href="#tab4_content" >
+                <span>
+                    <?php echo __("Tab4"); ?>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="tab_element_content">
+    <div id="tab1_content" >
+        <div>
+            <div>Tab 1 content goes here....</div>
+        </div>
+    </div>
+    <div id="tab2_content" >
+        <div>
+            <div>Tab 2 content goes here....</div>
+        </div>
+    </div>
+    <div id="tab3_content" >
+        <div>
+            <div>Tab 3 content goes here....</div>
+        </div>
+    </div>
+    <div id="tab4_content" >
+        <div>
+            <div>Tab 4 content goes here....</div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    require(["jquery","tabs"], function($){
+        $(function() {
+            $('#tab_element').tabs({
+                active: 'tab1_content',  // active tab elemtn id
+                destination: '#tab_element_content', // tab content destination element id
+                shadowTabs: []        
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Plumrocket Inc.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End-user License Agreement
+ * that is available through the world-wide-web at this URL:
+ * http://wiki.plumrocket.net/wiki/EULA
+ * If you are unable to obtain it through the world-wide-web, please
+ * send an email to support@plumrocket.com so we can send you a copy immediately.
+ *
+ * @package     Plumrocket_Base
+ * @copyright   Copyright (c) 2021 Plumrocket Inc. (http://www.plumrocket.com)
+ * @license     http://wiki.plumrocket.net/wiki/EULA  End-user License Agreement
+ */
+-->
+<extensions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="urn:magento:module:Plumrocket_Base:etc/pr_extensions.xsd">
+    <extension name="Base" title="Base" config_section="plumbase">
+        <customer key="951612e38632ad2d310afb24e97f7edd7e72c86022"/>
+    </extension>
+</extensions>

@@ -1,0 +1,7 @@
+[10-Feb-2020 17:26:48 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 220
+[21-Aug-2020 14:00:48 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[17-Mar-2021 15:16:27 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 134217736 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 83
+[20-Mar-2021 14:49:27 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/avtzo4aglh2c/public_html/dev.stanleysmarketstore.com/decrypt.php on line 13
+[20-Mar-2021 14:51:22 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/avtzo4aglh2c/public_html/dev.stanleysmarketstore.com/decrypt.php on line 13
+[20-Mar-2021 15:34:34 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/avtzo4aglh2c/public_html/dev.stanleysmarketstore.com/decrypt.php on line 13
+[20-Mar-2021 15:35:54 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/avtzo4aglh2c/public_html/dev.stanleysmarketstore.com/decrypt.php on line 13

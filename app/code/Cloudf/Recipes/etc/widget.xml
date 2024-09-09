@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Cloudf\Recipes\Block\Widget\Recipes" id="cloudf_recipes_recipes">
+        <label>Recipes Widget</label>
+        <description>Enter the blockIDs for each category content block.</description>
+        <parameters>
+            <parameter name="widgetcontent_cat1" sort_order="20" visible="true" xsi:type="block">
+                <label>Stanley's Recipes</label>
+                <block class="Cloudf\Recipes\Block\Widget\Recipes"/>
+            </parameter>
+            <parameter name="widgetcontent_cat2" sort_order="20" visible="true" xsi:type="block">
+                <label>Appetizers</label>
+                <block class="Cloudf\Recipes\Block\Widget\Recipes"/>
+            </parameter>
+            <parameter name="widgetcontent_cat3" sort_order="20" visible="true" xsi:type="block">
+                <label>Soups</label>
+                <block class="Cloudf\Recipes\Block\Widget\Recipes"/>
+            </parameter>
+            <parameter name="widgetcontent_cat4" sort_order="20" visible="true" xsi:type="block">
+                <label>Vegetables</label>
+                <block class="Cloudf\Recipes\Block\Widget\Recipes"/>
+            </parameter>
+            <parameter name="widgetcontent_cat5" sort_order="20" visible="true" xsi:type="block">
+                <label>Meat</label>
+                <block class="Cloudf\Recipes\Block\Widget\Recipes"/>
+            </parameter>
+            <parameter name="widgetcontent_cat6" sort_order="20" visible="true" xsi:type="block">
+                <label>Sauces</label>
+                <block class="Cloudf\Recipes\Block\Widget\Recipes"/>
+            </parameter>
+            <parameter name="widgetcontent_cat7" sort_order="20" visible="true" xsi:type="block">
+                <label>Cooking Instructions</label>
+                <block class="Cloudf\Recipes\Block\Widget\Recipes"/>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

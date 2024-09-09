@@ -1,0 +1,118 @@
+<div class="product data items"
+     data-mage-init='{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 0, "disabled": [], "disabledState": "disabled"}}'>
+
+     <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-cat1">Stanley's</a>
+    </div>
+    <div id="tab-cat1" class="item content" data-role="content">
+    <?php
+        $blockName = $block->getData('widgetcontent_cat1');
+        if ($blockName != ''){
+            echo $this->getLayout()
+->createBlock('Magento\Cms\Block\Block')
+->setBlockId($blockName)
+->toHtml();
+        }    
+    ?>
+    </div>
+
+     
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-cat2">Appetizers</a>
+    </div>
+    <div id="tab-cat2" class="item content" data-role="content">
+        <?php
+        $blockName = $block->getData('widgetcontent_cat2');
+        if ($blockName != ''){
+            echo $this->getLayout()
+->createBlock('Magento\Cms\Block\Block')
+->setBlockId($blockName)
+->toHtml();
+        }    
+    ?>
+    </div>
+
+   
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-cat3">Soups</a>
+    </div>
+    <div id="tab-cat3" class="item content" data-role="content">
+        <?php
+        $blockName = $block->getData('widgetcontent_cat3');
+        if ($blockName != ''){
+            echo $this->getLayout()
+->createBlock('Magento\Cms\Block\Block')
+->setBlockId($blockName)
+->toHtml();
+        }    
+    ?>
+    </div>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-cat4">Vegetables</a>
+    </div>
+    <div id="tab-cat4" class="item content" data-role="content">
+        <?php
+        $blockName = $block->getData('widgetcontent_cat4');
+        if ($blockName != ''){
+            echo $this->getLayout()
+->createBlock('Magento\Cms\Block\Block')
+->setBlockId($blockName)
+->toHtml();
+        }    
+    ?>
+    </div>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-cat5">Meat</a>
+    </div>
+    <div id="tab-cat5" class="item content" data-role="content">
+        <?php
+        $blockName = $block->getData('widgetcontent_cat5');
+        if ($blockName != ''){
+            echo $this->getLayout()
+->createBlock('Magento\Cms\Block\Block')
+->setBlockId($blockName)
+->toHtml();
+        }    
+    ?>
+    </div>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-cat6">Sauces</a>
+    </div>
+    <div id="tab-cat6" class="item content" data-role="content">
+        <?php
+        $blockName = $block->getData('widgetcontent_cat6');
+        if ($blockName != ''){
+            echo $this->getLayout()
+->createBlock('Magento\Cms\Block\Block')
+->setBlockId($blockName)
+->toHtml();
+        }    
+    ?>
+    </div>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-cat7">Cooking Instructions</a>
+    </div>
+    <div id="tab-cat7" class="item content" data-role="content">
+        <?php
+        $blockName = $block->getData('widgetcontent_cat7');
+        if ($blockName != ''){
+            echo $this->getLayout()
+->createBlock('Magento\Cms\Block\Block')
+->setBlockId($blockName)
+->toHtml();
+        }    
+    ?>
+    </div>
+
+    
+
+
+
+
+</div>
+
